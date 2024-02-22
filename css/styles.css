@@ -20,6 +20,9 @@ section{
 html {
     scroll-behavior: smooth;
 }
+ul{
+    list-style: none;
+}
 :root {
 	--color-header: #0084fd;
 	--color-odd-bg: #ffffff;
@@ -39,27 +42,68 @@ html {
     text-align: center;
 }
 /* *** */
-@media screen and (min-width: 768px){
-    .container{
-        max-width: 728px;
-    }
+/* flex utilities */
+.d-flex{
+    display: flex;
 }
-@media screen and (min-width: 992px){
-    .container{
-        max-width: 942px;
-    }
+.no-flex{
+    display: block;
 }
-@media screen and (min-width: 1200px){
-    .container{
-        max-width: 1160px;
-    }
+.align-items-center{
+    align-items: center;
+    align-content: center;
 }
+.column{
+    flex-direction: column;
+}
+.row{
+    flex-direction: row;
+}
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-flexend{
+    justify-content: flex-end;
+}
+.justify-evenly{
+    justify-content: space-evenly;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.align-baseline{
+    align-items: baseline;
+}
+.space-around{
+    justify-content: space-around;
+}
+.align-flex-start{
+    align-items: flex-start;
+}
+.align-items-stretch{
+    align-items: stretch;
+}
+/* *** */
+
 .button{
     background-color: var(--color-header);
-    border-radius: 10px;
-    width: 30%;
+    border-radius: 40px;
+    width: 100%;
     text-align: center;
-    margin: 0 auto;
+    padding: 8px;
+}
+.whitebtn{
+    background-color: var(--color-odd-bg);
+    color: black;
 }
 
 /* header */
@@ -67,7 +111,14 @@ nav{
     width: 100%;
     background-color: var(--color-header);
     padding: 20px;
-
+}
+nav li{
+    padding: 5px;
+    color: white;
+    display: none;
+}
+.ham-menu{
+    
 }
 /* ******* */
 
@@ -83,9 +134,12 @@ nav{
 }
 /* first section */
 .tile{
-    border-radius: 20px;
-    padding: 20px 20px 0px 20px;
+    border-radius: 50px;
+    padding: 20px;
     margin: 15px auto;
+}
+.first-tile{
+    padding-bottom: 0px;
 }
 #phone{
     width: 60%;
@@ -128,4 +182,27 @@ nav{
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
+}
+/* *** */
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 728px;
+    }
+}
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 942px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1160px;
+    }
+    nav li{
+        display: block;
+    }
+    .ham-menu{
+        display: none;
+    }
 }

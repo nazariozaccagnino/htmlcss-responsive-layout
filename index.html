@@ -14,18 +14,34 @@
 </head>
 <body>
     <header>
-        <nav class="debug">
-            <div id="logo"><img src="./img/logo.png" alt="logo"></div>                      
+        <nav class="debug d-flex justify-space-between align-items-center">
+                <div id="logo d-flex">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div>
+                    <ul class="d-flex">
+                        <li>Planning</li>
+                        <li>Testimonials</li>
+                        <li>Features</li>
+                        <li>About us</li>
+                        <li><div class="button whitebtn">Get Started</div></li>
+                    </ul>
+                </div>
+                <div class="ham-menu">
+                    <div><i class="fa-solid fa-bars"></i></div>
+                </div>
         </nav>
     </header>
     <main>
         <section id="features">
             <div class="container">
-                <div class="tile light-tile debug">
-                    <div>
+                <div class="tile first-tile light-tile debug">
+                    <div class="tile-text">
                         <h4>Get a demo application</h4>
                         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur nostrum laborum illum autem quibusdam dignissimos optio tempore. Pariatur, harum adipisci.</div>
-                        <div class="button">button</div>
+                        <div class="button">button</div>                        
+                    </div>
+                    <div class="tile-img">
                         <div id="phone"><img src="./img/phone.png" alt="phone"></div>
                     </div>
                 </div>
