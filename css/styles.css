@@ -11,6 +11,9 @@ body{
 main{
     padding-top: 20px;
 }
+section{
+    padding: 20px;
+}
 .debug{
     border: 1px solid red;
 }
@@ -47,6 +50,13 @@ html {
         max-width: 1160px;
     }
 }
+.button{
+    background-color: var(--color-header);
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /* header */
 nav{
@@ -55,12 +65,41 @@ nav{
     padding: 20px;
 
 }
-.tile{
+/* ******* */
+
+/* tile backgrounds */
+.light-tile{
     background-color: var(--color-contrast);
-    border-radius: 20px;
-    padding: 20px;
 }
-.tile img{
+.white-tile{
+    background-color: var(--color-odd-bg);
+}
+.purple-tile{
+    background-color: var(--color-even-bg);
+}
+/* first section */
+.tile{
+    border-radius: 20px;
+    padding: 20px 20px 0px 20px;
+    margin: 5px;
+}
+#phone{
+    width: 80%;
+    margin: 0 auto;
+}
+#phone img{
+    width: 100%;
+    display: block;
+}
+.tile h4, .tile i{
+    color: var(--color-header);
+}
+/* **** */
+/* second section */
+.planning{
+    width: 100%;
+}
+.planning img{
     width: 100%;
 }
 /* footer */
