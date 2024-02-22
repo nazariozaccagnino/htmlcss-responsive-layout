@@ -218,17 +218,44 @@ nav li{
 }
 #about .button{
     width: 190px;
+    background-color: #9792e4;
+}
+#about h3{
+    font-size: 1.5em;
+    color: #9792e4;
 }
 /* *** */
 /* get started section */
-
+#getstarted{
+    color: white;
+}
+#getstarted *{
+    margin-bottom: 20px;
+}
+#getstarted h4{
+    font-weight: 200;
+    color: lightgray;
+}
+#getstarted h3{
+    font-weight: 600;
+    color: white;
+}
+#getstarted h1{
+    font-size: 4em;
+    color: var(--color-color-h1);
+}
+#getstarted div>i{
+    font-size: 0.3em;
+}
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
     color: white;
     padding: 20px;
 }
-
+footer *{
+    margin-bottom: 40px;
+}
 /* *** */
 
 @media screen and (min-width: 768px){
@@ -258,13 +285,19 @@ footer{
         justify-content: space-between;
         width: 100%;
     }
-    
+    #people .tile{
+        display: flex;
+        
+    }
     #work-with-us .container>div{
         display: flex;
         flex-wrap: wrap;
     }
     #work-with-us .tile{
         width: 43%;
+    }
+    #about .container{
+        display: flex;
     }
 
 }
