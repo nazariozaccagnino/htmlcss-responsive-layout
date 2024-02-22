@@ -35,6 +35,10 @@ html {
 .even{
     background-color: var(--color-even-bg);
 }
+.text-center{
+    text-align: center;
+}
+/* *** */
 @media screen and (min-width: 768px){
     .container{
         max-width: 728px;
@@ -81,10 +85,10 @@ nav{
 .tile{
     border-radius: 20px;
     padding: 20px 20px 0px 20px;
-    margin: 5px;
+    margin: 15px auto;
 }
 #phone{
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
 }
 #phone img{
@@ -97,11 +101,30 @@ nav{
 /* **** */
 /* second section */
 .planning{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 .planning img{
     width: 100%;
 }
+/* *** */
+
+/* third section */
+.testimonials{
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+.testimonials img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
