@@ -305,11 +305,24 @@ footer *{
     .container{
         max-width: 1160px;
     }
+    #strategic-planning .container{
+        display: flex;
+    }
+    #strategic-planning .container>div{
+        width: 50%;
+    }
     #features .first-tile{
         display: flex;
     }
     #phone img{
         width: 100%;
+    }
+    #work-with-us .container>div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #work-with-us .tile{
+        width: calc(100% / 3);
     }
     nav li{
         display: block;
