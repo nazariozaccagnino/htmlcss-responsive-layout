@@ -97,15 +97,19 @@ ul{
 .button{
     background-color: var(--color-header);
     border-radius: 40px;
-    width: 100%;
+    width: 120px;
+    margin: 0 auto;
     text-align: center;
     padding: 8px;
+    color: white;
 }
 .whitebtn{
     background-color: var(--color-odd-bg);
     color: black;
 }
-
+.tile-text div i{
+    color: white;
+}    
 /* header */
 nav{
     width: 100%;
@@ -118,7 +122,24 @@ nav li{
     display: none;
 }
 .ham-menu{
-    
+    font-size: 2em;
+    color: white;
+    position: relative;
+}
+.ham-items ul{
+    color: black;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    background-color: var(--color-header);
+    font-size: 1.5em;
+    display: none;
+}
+.ham-items li{
+    padding: 10px;
+}
+.ham-menu:hover{
+    background-color: blue;
 }
 /* ******* */
 
@@ -134,7 +155,7 @@ nav li{
 }
 /* first section */
 .tile{
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 20px;
     margin: 15px auto;
 }
@@ -152,6 +173,19 @@ nav li{
 .tile h4, .tile i{
     color: var(--color-header);
 }
+.firstrow .tile h4{
+    font-size: 1.2em;
+}
+.firstrow .tile>i{
+    font-size: 3em;
+}
+.secondrow .tile, .secondrow .tile h4{
+    font-size: 1.2em;
+}
+.secondrow .tile i{
+    font-size: 3em;
+}
+
 /* **** */
 /* second section */
 .planning{
@@ -178,11 +212,23 @@ nav li{
     object-fit: cover;
     
 }
+/* about section */
+#about *{
+    margin-bottom: 10px;
+}
+#about .button{
+    width: 190px;
+}
+/* *** */
+/* get started section */
 
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
+    color: white;
+    padding: 20px;
 }
+
 /* *** */
 
 @media screen and (min-width: 768px){
@@ -194,10 +240,43 @@ footer{
     .container{
         max-width: 942px;
     }
+    #phone img{
+        width: 60%;
+    }
+    #features .tile{
+        width: 40%
+    }
+    .first-tile{
+        flex-grow: 1;
+    }
+    #features .firstrow{
+        display: flex;
+        width: 100%;
+    }
+    #features .secondrow{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    #work-with-us .container>div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #work-with-us .tile{
+        width: 43%;
+    }
+
 }
 @media screen and (min-width: 1200px){
     .container{
         max-width: 1160px;
+    }
+    #features .first-tile{
+        display: flex;
+    }
+    #phone img{
+        width: 100%;
     }
     nav li{
         display: block;
